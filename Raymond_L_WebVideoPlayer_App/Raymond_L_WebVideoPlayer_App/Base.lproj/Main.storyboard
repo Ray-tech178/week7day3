@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Raymond_L_WebVideoPlayer_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z01-Nm-zu1">
+                                <rect key="frame" x="0.0" y="457" width="414" height="405"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLQ-LB-ARx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="405"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="405" id="dqE-eK-XvL"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bLQ-LB-ARx" firstAttribute="leading" secondItem="z01-Nm-zu1" secondAttribute="leading" id="2Vh-O9-osa"/>
+                            <constraint firstItem="bLQ-LB-ARx" firstAttribute="trailing" secondItem="z01-Nm-zu1" secondAttribute="trailing" id="EO8-GM-Kvr"/>
+                            <constraint firstItem="bLQ-LB-ARx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JVd-ib-pVa"/>
+                            <constraint firstItem="z01-Nm-zu1" firstAttribute="top" secondItem="bLQ-LB-ARx" secondAttribute="bottom" constant="8" id="Pht-M1-FcM"/>
+                            <constraint firstItem="bLQ-LB-ARx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bpx-3N-PZa"/>
+                            <constraint firstItem="bLQ-LB-ARx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g2h-2z-ETn"/>
+                            <constraint firstItem="z01-Nm-zu1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qHM-Sm-JX4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="WebView" destination="bLQ-LB-ARx" id="mlk-D6-50J"/>
+                        <outlet property="WebView2" destination="z01-Nm-zu1" id="Wbc-ub-jwj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+</document>
